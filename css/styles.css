@@ -1,3 +1,17 @@
+.navbar {
+    color: white;
+    background-color: black;
+    transition: background 0.3s ease-in-out;
+}
+.navbar:hover {
+    background-color: black;
+    transition: background 0.3s ease-in-out;
+}
+.navbar a {
+    text-decoration: none;
+    color: white;
+}
+
 /* ============ desktop view ============ */
 @media all and (min-width: 992px) {
 	.navbar .nav-item .dropdown-menu{ display: none; }
@@ -6,11 +20,17 @@
 	.navbar .nav-item .dropdown-menu{ margin-top:0; }
 }
 
-.nav-item+div {
-    display: none;
+
+/* ========== mega menu ============= */
+.nav-category-header {
+    margin-bottom: 0;
 }
 
-.nav-item:hover+div {
+.nav-link+div {
+    display: block;
+}
+
+.nav-link:hover+div {
     display: block;
 }
 
@@ -26,5 +46,52 @@
 }
 
 nav:hover+#overlay {
-    display: block;
+    /* display: block; */
+}
+
+a.nav-link>i {
+    visibility: hidden;
+}
+
+a.nav-link:hover>i {
+    visibility: visible;
+}
+
+a.nav-link {
+    padding: 0 0px;
+    width: auto;
+    color: gray;
+    transition: none;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+/* Full column highlighting 
+.navbar .col:hover>*, .navbar .col:hover .nav-link-list>* {
+    color: white;
+}*/
+
+/* Header only highlighting */
+.navbar .col:hover>.nav-header {
+    color: white;
+}
+
+.nav-category-header {
+    color: #b5b5b5;
+}
+
+.nav-header {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.nav-link-list {
+    height: 0;
+    overflow: hidden;
+}
+/* Open mega menu when hovering on anything in .row */
+.navbar .row:hover .nav-link-list {
+    height: auto;
 }
