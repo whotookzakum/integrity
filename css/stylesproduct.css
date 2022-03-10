@@ -1,0 +1,9 @@
+.nospacing {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.lgbackground {
+    background-image: linear-gradient(to right, #5637dd, #3046C5, #60106b);
+}
