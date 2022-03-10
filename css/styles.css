@@ -82,16 +82,17 @@ a.nav-link {
     color: #b5b5b5;
 }
 
-.nav-header {
-    font-size: 16px;
+.nav-header, .nav-category-header {
+    font-size: 14px;
     text-transform: uppercase;
+    font-weight: 800;
 }
 
-.nav-link-list {
-    height: 0;
-    overflow: hidden;
+.nav-link+.nav-link-list {
+    display: none;
 }
+
 /* Open mega menu when hovering on anything in .row */
 .navbar .row:hover .nav-link-list {
-    height: auto;
+    display: block;
 }
