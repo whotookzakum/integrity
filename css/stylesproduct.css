@@ -1,9 +1,71 @@
+/* navbar styles */
+.navbar {
+    color: black;
+    background-color: transparent;
+    transition: background 0.3s ease-in-out;
+}
+.navbar:hover {
+    background-color: black;
+    color: white;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Carousel styles */
 .nospacing {
     margin: 0;
     padding: 0;
     width: 100%;
 }
 
-.lgbackground {
-    background-image: linear-gradient(to right, #5637dd, #3046C5, #60106b);
+.carousel {
+        background-color: #e7e7e7;
+        position: relative;
 }
+
+.widthtest {
+    width: 600px;
+}
+
+.carousel-control-size {
+    width: 80px;
+    height: 80px;
+}
+
+/* product details styles */
+
+.product__card {
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    background: rgb(whitesmoke,0.5);
+    /* background: rgb(245,245,245,0.5); */
+    box-shadow: 0px 3px 5px rgba(0,0,0,.5);
+    height: 300px;
+    width: 250px;
+
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    text-align: center;
+}
+
+.btn--product {
+    background: rgb(245,245,245,0.5);
+    box-shadow: 0px 3px 5px rgba(0,0,0,.5);
+}
+/* .product__name {
+    text-align: center;
+}
+
+.prodct__price {
+    text-align: center;
+}
+
+.product__sizeinput {
+    text-align: center;
+}
+
+.product__cartadd {
+    text-align: center;
+} */

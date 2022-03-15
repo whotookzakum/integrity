@@ -19,6 +19,9 @@
     <!-- Project CSS -->
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/stylesproduct.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
     <title></title>
 </head>
 
@@ -82,66 +85,110 @@
         </div>
     </nav>
 
+    <!-- Product Carousel -->
     <section>
-        <h1 class="bg-danger mt-5">hello</h1>
-        <div class="container container-fluid d-block">
-            <div id="productCarousel" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="container container-fluid">
-                            <div class="row">
-                                <div class="col">
-                                    <img src="./images/carousel-1.jpg" class="d-block w-100" alt="Image 1">
-                                </div>
-                                <div class="col lgbackground">
-                                    <h1>Product Details</h1>
-                                </div>
-                                <div class="col">
-                                    <img src="./images/carousel-2.jpg" class="d-block w-100" alt="Image 2">
-                                </div>
-                            </div>
+        <div id="productCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row g-0">
+                        <div class="col">
+                            <img src="./images/carousel-1.jpg" class="d-block widthtest" alt="Image 1">
                         </div>
-                    </div>
-    
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col">
-                                <img src="./images/carousel-3.jpg" class="d-block w-100" alt="Image 3">
-                            </div>
-                            <div class="col lgbackground">
-                                <h1>Product Details</h1>
-                            </div>
-                            <div class="col">
-                                <img src="./images/carousel-4.jpg" class="d-block w-100" alt="Image 4">
-                            </div>
+                        <div class="col">
+
                         </div>
-                    </div>
-    
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col">
-                                <img src="./images/carousel-5.jpg" class="d-block w-100" alt="Image 5">
-                            </div>
-                            <div class="col lgbackground">
-                                <h1>Product Details</h1>
-                            </div>
-                            <div class="col">
-                                <img src="./images/carousel-6.jpg" class="d-block w-100" alt="Image 6">
-                            </div>
+                        <div class="col">
+                            <img src="./images/carousel-2.jpg" class="d-block widthtest" alt="Image 2">
                         </div>
                     </div>
                 </div>
-    
-                <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+
+                <div class="carousel-item">
+                    <div class="row g-0">
+                        <div class="col">
+                            <img src="./images/carousel-3.jpg" class="d-block widthtest" alt="Image 3">
+                        </div>
+                        <div class="col lgbackground">
+
+                        </div>
+                        <div class="col">
+                            <img src="./images/carousel-4.jpg" class="d-block widthtest" alt="Image 4">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row g-0">
+                        <div class="col">
+                            <img src="./images/carousel-5.jpg" class="d-block widthtest" alt="Image 5">
+                        </div>
+                        <div class="col lgbackground">
+
+                        </div>
+                        <div class="col">
+                            <img src="./images/carousel-6.jpg" class="d-block widthtest" alt="Image 6">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon carousel-control-size" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon carousel-control-size" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="product_details">
+            <div class="card product__card">
+                <div class="card-body">
+                    <div class="row flex-column">
+                        <div class="col">
+                            <h5 class="card-title">Cool Outfit</h5>
+                        </div>
+                        <div class="col">
+                            <div class="product__price">
+                                <h3>$5000.00</h3>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="product__sizeinput">
+                                <select class="form-select" aria-label="Size Form">
+                                    <option value="" selected hidden disabled>Size</option>
+                                    <option value="Small">Small</option>
+                                    <option value="Medium">Medium</option>
+                                    <option value="Large">Large</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <a href="#" class="btn btn--product"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                ADD TO
+                                CART</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        <section class="product_collpase">
+            <a class="btn d-block w-100" data-bs-toggle="collapse" href="#productcollapse" role="button" aria-expanded="false"
+                aria-controls="collapseExample">
+                Shipping Options
+            </a>
+            <div class="collapse" id="productcollapse">
+                <div class="card card-body">
+                    <ol>
+                        <li>item 1</li>
+                        <li>item 1</li>
+                        <li>item 1</li>
+                        <li>item 1</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
     </section>
 </body>
 
