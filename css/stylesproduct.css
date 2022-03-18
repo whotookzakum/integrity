@@ -1,21 +1,3 @@
-/* navbar styles */
-.navbar {
-    /* background-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(231,231,231,.1)); */
-    background-color: black;
-    transition: background 0.3s ease-in-out;
-}
-
-.navbar--center {
-    display: flex;
-    justify-content: center;
-}
-
-.navbar:hover {
-    background-color: black;
-    color: white;
-    transition: background 0.3s ease-in-out;
-}
-
 .row--width {
     /* width: 550px; */
     display: flex;
@@ -90,15 +72,12 @@
 /* .product__name {
     text-align: center;
 }
-
 .prodct__price {
     text-align: center;
 }
-
 .product__sizeinput {
     text-align: center;
 }
-
 .product__cartadd {
     text-align: center;
 } */
