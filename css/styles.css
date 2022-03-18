@@ -1,12 +1,16 @@
+body {
+    background-color: #161616;
+}
+
 .navbar {
     color: white;
     background-image: linear-gradient(black, transparent);
-    transition: background 0.3s ease-in-out;
 }
+
 .navbar:hover {
     background-color: black;
-    transition: background 0.3s ease-in-out;
 }
+
 .navbar a {
     text-decoration: none;
     color: white;
@@ -14,10 +18,19 @@
 
 /* ============ desktop view ============ */
 @media all and (min-width: 992px) {
-	.navbar .nav-item .dropdown-menu{ display: none; }
-	.navbar .nav-item:hover .nav-link{   }
-	.navbar .nav-item:hover .dropdown-menu{ display: block; }
-	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+    .navbar .nav-item .dropdown-menu {
+        display: none;
+    }
+
+    .navbar .nav-item:hover .nav-link {}
+
+    .navbar .nav-item:hover .dropdown-menu {
+        display: block;
+    }
+
+    .navbar .nav-item .dropdown-menu {
+        margin-top: 0;
+    }
 }
 
 
@@ -26,40 +39,33 @@
     margin-bottom: 0;
 }
 
-.nav-link+div {
-    display: block;
-}
-
-.nav-link:hover+div {
-    display: block;
-}
 
 #overlay {
-  position: fixed;
-  display: none;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 5;
-  background: rgba(0, 0, 0, 0.5);
+    display: none;
+    position: fixed;
+    z-index: 900;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
 }
 
-nav:hover+#overlay {
-    /* display: block; */
+#overlay:hover, .megamenu-bg:hover {
+    display: block;
 }
 
-a.nav-link>i {
+a.nav-link > i,
+h6.nav-category-header > i {
+    font-size: 16px;
     visibility: hidden;
 }
 
-a.nav-link:hover>i {
+a.nav-link:hover > i {
     visibility: visible;
 }
 
 a.nav-link {
-    padding: 0 0px;
-    width: auto;
     color: gray;
     transition: none;
 }
@@ -74,7 +80,7 @@ a.nav-link {
 }*/
 
 /* Header only highlighting */
-.navbar .col:hover>.nav-header {
+.navbar .col:hover > .nav-header {
     color: white;
 }
 
@@ -82,17 +88,68 @@ a.nav-link {
     color: #b5b5b5;
 }
 
-.nav-header, .nav-category-header {
+.nav-header {
+    line-height: 36px;
+}
+
+.nav-header,
+.nav-category-header {
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 800;
 }
 
-.nav-link+.nav-link-list {
+
+#home-featured-carousel {
+
+    background: gray;
+}
+
+/*
+.carousel-item {
+    width: auto;
+}
+
+.carousel-caption {
+    position: absolute;
+    left: 0;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+.carousel-caption h5 {
+    margin: 0;
+    font-size: 30px;
+}
+.carousel-caption p {
+    margin: 0;
+    font-size: 20px;
+}*/
+
+#home-new-arrivals {
+    color: white;
+    text-align: center;
+}
+
+.megamenu-contents {
+    background: black;
+}
+
+.megamenu-col {
+    width: 8rem
+}
+
+.nav-link + .megamenu-contents {
     display: none;
 }
 
-/* Open mega menu when hovering on anything in .row */
-.navbar .row:hover .nav-link-list {
+.nav-link:hover + .megamenu-contents,
+.megamenu-contents:hover {
     display: block;
+}
+
+.megamenu-bg {
+    background-color: black;
+    height: 16rem;
+    z-index: 1000;
 }
